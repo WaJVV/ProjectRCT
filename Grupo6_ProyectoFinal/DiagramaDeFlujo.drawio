@@ -1,0 +1,125 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.12">
+  <diagram name="Diagrama Reloj" id="DiagramaReloj1">
+    <mxGraphModel dx="1428" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="inicio" value="Inicio" style="ellipse;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="400" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rtc" value="Se prende el RTC" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="100" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="editaHora" value="¿Se edita la hora?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="160" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="estadoNormal1" value="&lt;div&gt;Se crea un&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;evento&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="280" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="escogeFecha" value="Se escoge la hora/día/fecha de la alarma/evento" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="610" y="260" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tono" value="Suena el tono que se va a escoger" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="360" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="evento" value="Suena la alarma (Buzzer y LEDs)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="460" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="calendario" value="El usuario detiene la alarma por medio de los botones" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="570" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="estadoNormal2" value="Se visualiza el estado normal del reloj" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="740" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fin" value="Fin" style="ellipse;fillColor=#FFCCCC;" parent="1" vertex="1">
+          <mxGeometry x="520" y="860" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="inicio" target="rtc" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="E0BA6fuWJMPzgEGbYWex-3" target="editaHora" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="No" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#FF0000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="E0BA6fuWJMPzgEGbYWex-3" target="estadoNormal1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="180" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="Sí" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#00AA00;" parent="1" source="editaHora" target="escogeFecha" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="escogeFecha" target="tono" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="tono" target="evento" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="evento" target="calendario" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;exitX=0.545;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="calendario" target="estadoNormal2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="720" as="sourcePoint" />
+            <mxPoint x="750" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="estadoNormal2" target="fin" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E0BA6fuWJMPzgEGbYWex-2" value="Se muestra el calendario" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="380" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0BA6fuWJMPzgEGbYWex-3" value="&lt;div&gt;EI usuario toca&lt;/div&gt;&lt;div&gt;los botones para&lt;/div&gt;&lt;div&gt;agregar una&lt;/div&gt;&lt;div&gt;alarma o evento&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="190" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0BA6fuWJMPzgEGbYWex-4" value="No" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#FF0000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="estadoNormal1" target="calendario">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="440" as="sourcePoint" />
+            <mxPoint x="100" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="180" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E0BA6fuWJMPzgEGbYWex-6" value="Sí" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#00AA00;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="estadoNormal1" target="escogeFecha">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="310" as="sourcePoint" />
+            <mxPoint x="460" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E0BA6fuWJMPzgEGbYWex-8" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.55;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="rtc" target="E0BA6fuWJMPzgEGbYWex-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="170" as="sourcePoint" />
+            <mxPoint x="500" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E0BA6fuWJMPzgEGbYWex-10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.54;entryY=0.083;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="rtc" target="E0BA6fuWJMPzgEGbYWex-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="100" as="sourcePoint" />
+            <mxPoint x="670" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E0BA6fuWJMPzgEGbYWex-11" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="E0BA6fuWJMPzgEGbYWex-2" target="estadoNormal2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1010" y="570" as="sourcePoint" />
+            <mxPoint x="1030" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E0BA6fuWJMPzgEGbYWex-13" value="No" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#FF0000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="editaHora" target="estadoNormal2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="960" y="270" as="sourcePoint" />
+            <mxPoint x="1420" y="530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="960" y="200" />
+              <mxPoint x="960" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
