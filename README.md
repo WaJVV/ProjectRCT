@@ -44,11 +44,8 @@ Grupo6_ProyectoFinal/
 
 ## 👥 Integrantes
 
-- **[Nombre 1]**
-- **[Nombre 2]**
-- **[Nombre 3]**
-- **[Nombre 4]**
-- (Agrega aquí los nombres del equipo)
+- **[Wayner Jimenez]**
+
 
 ## 📄 Licencia
 
